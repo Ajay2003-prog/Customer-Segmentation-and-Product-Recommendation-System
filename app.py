@@ -19,7 +19,7 @@ evaluation = pd.read_csv("model_evaluation.csv")
 similarity_df = joblib.load("similarity_df.pkl")
 
 Base_DIR = os.path.dirname(os.path.abspath(__file__))
-scaler = joblib.load(os.path.join(Base_DIR,"scaler .pkl"))
+scaler = joblib.load(os.path.join(Base_DIR,"scaler.pkl"))
 model = joblib.load(os.path.join(Base_DIR,"kmeans.pkl"))
 
 #creating revenue column
